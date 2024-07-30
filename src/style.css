@@ -1,0 +1,73 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (min-width: 700px) {
+  .profile,
+  .card-container,
+  .skill {
+    margin: 7% 0 !important;
+  }
+
+  .contact {
+    height: 130px !important;
+  }
+
+  .mail a {
+    font-size: 5rem !important;
+  }
+}
+
+@media (max-width: 699px) {
+  .profile,
+  .card-container,
+  .skill {
+    margin: 14% 0 !important;
+  }
+
+  nav a {
+    font-size: normal !important;
+    font-weight: 400 !important;
+  }
+
+  /* .card-container {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+  } */
+
+  .profile {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+
+  .image {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .imgprofile {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .container-profile {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  .imgcat {
+    width: 110px !important;
+    transform: translateY(-90px) !important;
+  }
+}
