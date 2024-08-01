@@ -7,7 +7,8 @@ const props = defineProps([
   "prev",
   "tech",
   "desc",
-  "demo",
+  "typedemo",
+  "linkdemo",
   "imgdemo",
 ]);
 
@@ -38,10 +39,14 @@ const showModal = ref(false);
         <li v-for="list in props.desc" v-html="list"></li>
       </ul>
       <div>
-        <h4 v-if="props.id == 1">
+        <h4 v-if="props.typedemo == 'anchor'">
           <a :href="props.demo" target="_blank" class="demo">Demo &#10138;</a>
         </h4>
-        <h4 v-else-if="props.id == 2" class="demo" @click="showModal = true">
+        <h4
+          v-else-if="props.typedemo == 'modal'"
+          class="demo"
+          @click="showModal = true"
+        >
           Demo &#10138;
         </h4>
       </div>

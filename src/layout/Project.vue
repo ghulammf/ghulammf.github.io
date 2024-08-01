@@ -16,7 +16,8 @@ import Card from "../components/Card.vue";
         :prev="item.prev"
         :tech="item.technologies"
         :desc="item.description"
-        :demo="item.demo"
+        :typedemo="item.typedemo"
+        :linkdemo="item.linkdemo"
         :imgdemo="item.imagedemo"
       />
     </div>

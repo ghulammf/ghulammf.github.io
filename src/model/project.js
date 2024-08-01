@@ -2,8 +2,12 @@ import vite from "../assets/vite.svg";
 import react from '../assets/React.png';
 import tailwind from '../assets/Tailwind.png';
 import vue from '../assets/vue.svg';
+
+// hemo design model
 import homedesign1 from '../assets/home-design-1.jpg';
 import homedesign2 from '../assets/home-design-2.jpg';
+
+// resto model
 import resto1 from '../assets/resto1.jpg';
 import resto2 from '../assets/resto2.jpg';
 import resto3 from '../assets/resto3.jpg';
@@ -11,6 +15,13 @@ import resto4 from '../assets/resto4.jpg';
 import resto5 from '../assets/resto5.jpg';
 import resto6 from '../assets/resto6.jpg';
 
+// eza model
+import eza1 from '../assets/eza1.jpg'
+import eza2 from '../assets/eza2.jpg'
+import eza3 from '../assets/eza3.jpg'
+import eza4 from '../assets/eza4.jpg'
+import eza5 from '../assets/eza5.jpg'
+import eza6 from '../assets/eza6.jpg'
 
 const project = [
     {
@@ -31,7 +42,8 @@ const project = [
             "Responsive website display on every screen size",
             "implementing components, layouting, state, props and mvc models on websites"
         ],
-        demo: 'https://ghulammf.github.io/home-design/',
+        typedemo: 'anchor',
+        linkdemo: 'https://ghulammf.github.io/home-design/',
         imagedemo: []
     },
     {
@@ -53,7 +65,8 @@ const project = [
             "using <b>vue-router</b> to perform routing pages",
             "the application is built using the <b>MVC</b> concept"
         ],
-        demo: '',
+        typedemo: 'modal',
+        linkdemo: '',
         imagedemo: [
             resto1,
             resto2,
@@ -61,6 +74,37 @@ const project = [
             resto4,
             resto5,
             resto6,
+        ]
+    },
+    {
+        id: 3,
+        title: "Store Management",
+        prev: [
+            eza2,
+        ],
+        technologies: [
+            react,
+            tailwind,
+            vite,
+
+        ],
+        description: [
+            "build a Store Management Application web using the <b>Reactjs</b> library",
+            "design the appearance of web pages using the <b>Tailwindcss</b> framework",
+            "The main features of the application are store <b>CRUD</b> inventory, sales and employees",
+            "using <b>react-router</b> for page routing",
+            "using <b>axios</b> for data requests",
+            "using <b>json-server</b> as RESTful-API"
+        ],
+        typedemo: 'modal',
+        linkdemo: '',
+        imagedemo: [
+            eza1,
+            eza2,
+            eza3,
+            eza4,
+            eza5,
+            eza6,
         ]
     }
 ]
