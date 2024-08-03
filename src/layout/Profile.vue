@@ -30,7 +30,7 @@ import cat from "../assets/cat.png";
           <div class="container-profile">
             <div class="img imgprofile" alt=""></div>
           </div>
-          <img
+          <!-- <img
             class="imgcat"
             :src="cat"
             alt=""
@@ -42,7 +42,7 @@ import cat from "../assets/cat.png";
               display: flex;
               justify-content: center;
             "
-          />
+          /> -->
         </div>
       </section>
     </div>
@@ -99,9 +99,10 @@ import cat from "../assets/cat.png";
 }
 
 .imgprofile {
-  background-image: url("../assets/bg2.jpg");
-  background-position: center;
+  background-image: url("../assets/profile.jpg");
+  background-position: top;
   background-size: cover;
+  filter: grayscale(1);
   border-radius: 50%;
   width: 300px;
   height: 300px;
@@ -109,7 +110,38 @@ import cat from "../assets/cat.png";
   overflow: hidden;
 }
 
-.image:hover .imgprofile {
+/* .image:hover .imgprofile {
   transform: scale(1.2);
+} */
+
+@media (max-width: 699px) {
+  .profile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .description p {
+    text-align: center;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .imgprofile {
+    width: 200px;
+    height: 200px;
+  }
+
+  .container-profile {
+    width: 200px;
+    height: 200px;
+  }
+
+  /*.imgcat {
+    width: 110px !important;
+    transform: translateY(-90px) !important; 
+  }*/
 }
 </style>

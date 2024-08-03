@@ -46,7 +46,7 @@
     grid-template-columns: 1fr 1fr !important;
   } */
 
-  .profile {
+  /* .profile {
     display: flex !important;
     flex-direction: column-reverse !important;
   }
@@ -69,5 +69,5 @@
   .imgcat {
     width: 110px !important;
     transform: translateY(-90px) !important;
-  }
+  } */
 }
