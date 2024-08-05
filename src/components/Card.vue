@@ -4,6 +4,7 @@ import { ref } from "vue";
 const props = defineProps([
   "id",
   "title",
+  "projecttype",
   "prev",
   "tech",
   "desc",
@@ -27,6 +28,9 @@ const showModal = ref(false);
       />
     </div>
     <h3>{{ props.title }}</h3>
+    <p class="typeproject">
+      <i>{{ props.projecttype }}</i>
+    </p>
     <div class="technology">
       <img v-for="list in props.tech" :src="list" alt="tech" />
     </div>
@@ -40,7 +44,9 @@ const showModal = ref(false);
       </ul>
       <div>
         <h4 v-if="props.typedemo == 'anchor'">
-          <a :href="props.demo" target="_blank" class="demo">Demo &#10138;</a>
+          <a :href="props.linkdemo" target="_blank" class="demo"
+            >Demo &#10138;</a
+          >
         </h4>
         <h4
           v-else-if="props.typedemo == 'modal'"
@@ -84,9 +90,18 @@ const showModal = ref(false);
   backdrop-filter: blur(1px);
 }
 
-.card h3,
-h4 {
+.card h3 {
   text-align: center;
+  margin-bottom: 0;
+}
+
+.card h4 {
+  text-align: center;
+}
+
+.typeproject {
+  text-align: center;
+  margin-top: 0;
 }
 
 .technology {

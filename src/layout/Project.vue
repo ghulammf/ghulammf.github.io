@@ -13,6 +13,7 @@ import Card from "../components/Card.vue";
         :key="item.id"
         :id="item.id"
         :title="item.title"
+        :projecttype="item.projectType"
         :prev="item.prev"
         :tech="item.technologies"
         :desc="item.description"

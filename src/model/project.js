@@ -23,12 +23,15 @@ import eza4 from '../assets/eza4.jpg'
 import eza5 from '../assets/eza5.jpg'
 import eza6 from '../assets/eza6.jpg'
 
+// car website
+import carwebsite from '../assets/car-website.jpg'
+
 const project = [
     {
         id: 1,
         title: "Home Design",
+        projectType: "Self Project",
         prev: [
-            homedesign1,
             homedesign2,
         ],
         technologies: [
@@ -49,6 +52,7 @@ const project = [
     {
         id: 2,
         title: "Restaurant App",
+        projectType: "Self Project",
         prev: [
             resto1,
         ],
@@ -57,7 +61,7 @@ const project = [
             vite,
         ],
         description: [
-            "build a web application 'Restaurant App' using <b>vuejs</b> framework",
+            "build a web application 'Restaurant App' using <b>Vuejs</b> framework",
             "The main feature of the application is <b>CRUD</b> restaurant menu",
             "implement an <b>authentication</b> system for admin users",
             "using <b>json-server</b> for RESTful API management",
@@ -79,6 +83,7 @@ const project = [
     {
         id: 3,
         title: "Store Management",
+        projectType: "Self Project",
         prev: [
             eza2,
         ],
@@ -106,7 +111,26 @@ const project = [
             eza5,
             eza6,
         ]
-    }
+    },
+    {
+        id: 4,
+        title: "Car Website",
+        projectType: "Self Project",
+        prev: [carwebsite],
+        technologies: [
+            vite,
+            vue,
+            tailwind,
+        ],
+        description: [
+            "build a landing page 'Car Website' using <b>Vuejs</b> library",
+            "using <b>tailwindcss</b> for interface styling",
+            "Responsive website display on every screen size"
+        ],
+        typedemo: 'anchor',
+        linkdemo: 'https://ghulammf.github.io/car-website/',
+        imagedemo: []
+    },
 ]
 
 export default project
