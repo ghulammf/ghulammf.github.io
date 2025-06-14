@@ -28,7 +28,7 @@ import cat from "../assets/cat.png";
       >
         <div class="image">
           <div class="container-profile">
-            <div class="img imgprofile" alt=""></div>
+            <div class="img imgprofile" alt="Profile Photo"></div>
           </div>
           <!-- <img
             class="imgcat"
@@ -99,7 +99,7 @@ import cat from "../assets/cat.png";
 }
 
 .imgprofile {
-  background-image: url("../assets/profile.jpg");
+  /* background-image: url("../assets/profile.jpg"); */
   background-position: top;
   background-size: cover;
   filter: grayscale(1);
